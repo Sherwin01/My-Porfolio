@@ -6,42 +6,6 @@
 
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body{
-    background-color: #000000;
-    color: #144272;
-}
-/* header  */
-/* # because its called by id  */
-#header{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: ce;
-}
-
-.container{
-    padding: 10px 10%;
-    
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-
-.logo{
-    width: 140px;
-    font-size: 50px;
-}
-
-
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -67,24 +31,50 @@ nav ul li a::after{
 }
 
 nav ul li a:hover::after {
-    width: 100%;
+    width: 50px;
 }
 
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #2C74B3;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    width: 140px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
 .header-text {
-    margin-top: 20%;
+    margin-top: 17%;
     font-size: 30px;
+    margin-left: 75px;
 }
 
 .header-text h1{
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: -15px;
+    font-weight: bold;
 }
 
 .header-text h1 span{
     color: #2C74B3;
 }
 
-/* about  */
+
+/*---------------- about me page-------------------- */
 
 #about{
     padding: 80px 0;
@@ -122,50 +112,7 @@ nav ul li a:hover::after {
 
 }
 
-.tab-title {
-    display: flex;
-    margin: 20px, 0 40px;
-    margin-top: 20px;
-}
-
-.tab-links {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #144272;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-
-.tab-links.active-link::after{
-    width: 50%;
-}
-
-.tab-contents ul li {
-    list-style: none;
-    margin: 10px 0;
-    margin-top: 20px;
-}
-
-.tab-contents{
-    display: none;
-}
-
-.tab-contents.active-tab {
-    display: block;
-}
-
-/*----contact----*/
+/*----contact page----*/
 
 .contact-left {
     flex-basis: 35%;
@@ -196,10 +143,10 @@ nav ul li a:hover::after {
     display: inline-block;
 }
 
-.btn {
+.btn1 {
     display: inline-block;
     background: #2C74B3;
-    margin: 50px auto;
+    margin: 5px auto;
     width: fit-content;
     border: 1px solid #2C74B3;
     padding: 14px 50px;
@@ -210,8 +157,8 @@ nav ul li a:hover::after {
 
 }
 
-.btn:hover {
-    background: #144272;
+.btn1:hover {
+    background: #2C74B3;
 }
 
 .contact-right form {
@@ -237,47 +184,18 @@ form .btn2{
     cursor: pointer;
 }
 
-/*----small screen----*/
-nav .fas {
-    display: none;
-}
+
+
+
 
 @media only screen and (max-width: 600px) {
     .header-text {
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 25%;
+        font-size: 25px;
     }
 
     .header-text h1 {
-        font-size: 30px;
-    }
-
-    nav .fas {
-        display: block;
-        font-size: 25px;
-    }
-    
-    nav ul {
-        background: #fff;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .fas {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
+        font-size: 50px;
     }
 
     .sub-title {
@@ -301,8 +219,10 @@ nav .fas {
     }
 }
 
+
+
 #msg {
     color: #61b752;
-    margin-top: -30px;
+    margin-top: 30px;
     display: block;
 }

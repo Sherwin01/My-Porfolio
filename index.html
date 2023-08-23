@@ -1,36 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-<!----------------header--------------------->
-    <div id="header">
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <p>Sherwin.</p>
-                </div>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
+  <header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#header">Sherwin.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#header">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.facebook.com/sherwinliminhoo/">Facebook</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/sherwinliminhoo/">Instagram</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">09063616629</a></li>
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi, I'm <span>Sherwin</span> <br> Lim From Quezon City</h1>
-            </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <!----------------about--------------------->
-    <div id="about">
+      </nav>
+      <div id="header" class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Sherwin</span><br>Lim From Quezon <br>City.</h1>
+      </div>
+    </header>
+      <!--- about page --->
+      <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -39,47 +60,67 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Mauris blandit consequat nisi, id tempus sem tristique 
-                       sed. Pellentesque habitant morbi tristique senectus et 
-                       netus et malesuada fames ac turpis egestas. Praesent 
-                       elit est, scelerisque at lectus vitae, placerat congue 
-                       augue. Maecenas interdum placerat libero quis faucibus. 
-                       Etiam convallis aliquet luctus.</p>
-
-                       <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                       </div>
-                       <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li>Web Development</li>
-                                <li>jQuery</li>
-                                <li>Bootstrap</li>
-                                <li>Knowledge in basic System and Networks</li>
-                                <li>Knowledge in Python</li>
-                                <li>Knowledgable in version control system or git</li>
-                                <li>Knowledge in Computer Troubleshooting</li>
-                                <li>Fast Learner</li>
-                                <li>Willing to be trained</li>
-                            </ul>
-                       </div>
-                       <div class="tab-contents" id="education">
-                        <ul>
-                            <li>2014 - 2017<br>Diploma in Computer Engineering Technology<br>Polytechnic University of the Philippines.</li>
-                            <li>2017 - 2022<br>Bachelor of Science in Computer Engineering<br>Polytechnic University of the Philippines.</li>
-                        </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li>2015<br>IT Support Intern<br>SPI CRM</li>
-                                <li>2017<br>IT SUpport Intern<br>VRP MEDICAL CENTER</li>
-                            </ul>
-                   </div>
+                        Mauris blandit consequat nisi, id tempus sem tristique 
+                        sed. Pellentesque habitant morbi tristique senectus et 
+                        netus et malesuada fames ac turpis egestas. Praesent 
+                        elit est, scelerisque at lectus vitae, placerat congue 
+                        augue. Maecenas interdum placerat libero quis faucibus. 
+                        Etiam convallis aliquet luctus.</p>
+                    <div>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#skills" aria-expanded="false" aria-controls="collapseWidthExample">
+                              Skills
+                            </button>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#education" aria-expanded="false" aria-controls="collapseWidthExample">
+                                Education
+                            </button>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#experience" aria-expanded="false" aria-controls="collapseWidthExample">
+                                Experience
+                            </button>
+                          </p>
+                          <div>
+                            <div class="collapse collapse-horizontal" id="skills">
+                              <div class="card card-body" style="width: 300px;">
+                                <ul>
+                                    <li>Web Development</li>
+                                    <li>jQuery</li>
+                                    <li>Bootstrap</li>
+                                    <li>Knowledge in basic System and Networks</li>
+                                    <li>Knowledge in Python</li>
+                                    <li>Knowledgable in version control system or git</li>
+                                    <li>Knowledge in Computer Troubleshooting</li>
+                                    <li>Fast Learner</li>
+                                    <li>Willing to be trained</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="collapse collapse-horizontal" id="education">
+                              <div class="card card-body" style="width: 300px;">
+                                <ul>
+                                    <li>2014 - 2017<br>Diploma in Computer Engineering Technology<br>Polytechnic University of the Philippines.</li>
+                                    <li>2017 - 2022<br>Bachelor of Science in Computer Engineering<br>Polytechnic University of the Philippines.</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="collapse collapse-horizontal" id="experience">
+                              <div class="card card-body" style="width: 300px;">
+                                <ul>
+                                    <li>2015<br>IT Support Intern<br>SPI CRM</li>
+                                    <li>2017<br>IT SUpport Intern<br>VRP MEDICAL CENTER</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!----------------Contact--------------------->
+      </div>
+      <!----------------Contact--------------------->
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -92,24 +133,38 @@
                         <a href="https://www.instagram.com/sherwinliminhoo/"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://twitter.com/sherwinliminhoo"><i class="fa-brands fa-twitter-square"></i></a>
                     </div>
-                    <a href="images/CV.pdf" download class="btn">Download CV</a>
+                    <a href="images/CV.pdf" download class="btn1">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <button type="submit" class="btn1 btn2">Submit</button>
                     </form>
                     <span id="msg"></span>
                 </div>
             </div>
         </div>
-        <div class="copyright"></div>
-            <p>Copyright @ Sherwin.</p>
     </div>
-    <script src="java.js"></script>
-    <script src="https://kit.fontawesome.com/027d07df5c.js" crossorigin="anonymous"></script>
-</body>
-</html>
+  <footer>
+    <!-- place footer here -->
 
+    <div class="footer"></div>
+            <p> Copyright @ Sherwin.</p>
+    </div>
+
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="java.js"></script>
+  <script src="https://kit.fontawesome.com/027d07df5c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
