@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!----------------header--------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <p>Sherwin.</p>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Sherwin</span> <br> Lim From Quezon City</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------about--------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       Mauris blandit consequat nisi, id tempus sem tristique 
+                       sed. Pellentesque habitant morbi tristique senectus et 
+                       netus et malesuada fames ac turpis egestas. Praesent 
+                       elit est, scelerisque at lectus vitae, placerat congue 
+                       augue. Maecenas interdum placerat libero quis faucibus. 
+                       Etiam convallis aliquet luctus.</p>
+
+                       <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>Web Development</li>
+                                <li>jQuery</li>
+                                <li>Bootstrap</li>
+                                <li>Knowledge in basic System and Networks</li>
+                                <li>Knowledge in Python</li>
+                                <li>Knowledgable in version control system or git</li>
+                                <li>Knowledge in Computer Troubleshooting</li>
+                                <li>Fast Learner</li>
+                                <li>Willing to be trained</li>
+                            </ul>
+                       </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li>2014 - 2017<br>Diploma in Computer Engineering Technology<br>Polytechnic University of the Philippines.</li>
+                            <li>2017 - 2022<br>Bachelor of Science in Computer Engineering<br>Polytechnic University of the Philippines.</li>
+                        </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>2015<br>IT Support Intern<br>SPI CRM</li>
+                                <li>2017<br>IT SUpport Intern<br>VRP MEDICAL CENTER</li>
+                            </ul>
+                   </div>
+            </div>
+        </div>
+    </div>
+    <!----------------Contact--------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> sherwinlim8899@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09063616629</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sherwinliminhoo/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sherwinliminhoo/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/sherwinliminhoo"><i class="fa-brands fa-twitter-square"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"></div>
+            <p>Copyright @ Sherwin.</p>
+    </div>
+    <script src="java.js"></script>
+    <script src="https://kit.fontawesome.com/027d07df5c.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
